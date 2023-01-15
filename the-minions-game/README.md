@@ -1,3 +1,5 @@
+# The Minions Game
+
 Kevin and Stuart want to play the 'The Minion Game'.
 
 ## Game Rules
