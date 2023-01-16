@@ -10,7 +10,7 @@ Given a list of integers and a target value, find two integers from the list tha
 
 **Input**: `[1, 2, 3, 4, 5], 5`
 
-**Output**: `(2, 3)`
+**Output**: `(2, 3)` or `(1,4)`
 
 **Input**: `[1, 3, 5, 7, 9], 8`
 
