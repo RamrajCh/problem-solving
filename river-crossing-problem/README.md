@@ -16,7 +16,7 @@ The first step in solving this problem is to use logical reasoning and planning 
 
 ### Constraint Satisfaction
 
-The next step is to use constraint satisfaction to ensure that all the constraints are satisfied. This means that the farmer must take steps to ensure that the wolf is never left alone with the chicken or the corn, and that the chicken is never left alone with the corn.
+The next step is to use constraint satisfaction to ensure that all the constraints are satisfied. This means that the farmer must take steps to ensure that the wolf is never left alone with the chicken and that the chicken is never left alone with the corn.
 
 ### Iterative Problem-Solving
 
