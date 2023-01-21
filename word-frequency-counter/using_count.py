@@ -15,6 +15,5 @@ def word_count(S):
     print(freq)
 
 if __name__ == "__main__":
-    standard_input = "This is a test. This is only a test."
     S = input()
     word_count(S)
