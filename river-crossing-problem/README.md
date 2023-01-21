@@ -1,32 +1,33 @@
 # River Crossing Problem
 
-## Problem Statement:
+## Introduction
 
-A farmer has a wolf, a chicken, and a bag of corn. He needs to cross a river in a small boat, but the boat can only carry him and one other item at a time. If the wolf is left alone with the chicken, it will eat it. If the chicken is left alone with the corn, it will eat it. How can the farmer get all three across the river safely?
+The River Crossing Problem is a classic AI problem in which a farmer needs to transport a wolf, a goat, and a cabbage across a river using a boat. However, the farmer can only take one item across the river at a time, and if left alone, the wolf will eat the goat, and the goat will eat the cabbage. The goal is to find a sequence of steps that will safely transport all items across the river.
 
-## Concepts for solving the problem:
+## Constraints
+- The farmer is the only one who can operate the boat.
+- The farmer cannot leave the goat alone with the cabbage or the goat alone with the wolf.
+- The boat can only carry the farmer and one other item.
 
-- Logical reasoning and planning
-- Constraint satisfaction
-- Iterative problem-solving
+## States
+The states of the problem are represented by the location of the farmer, the wolf, the goat, and the cabbage. The location can be either on the left bank or the right bank of the river. Each location is represented by a digit, 0 represents on left bank and 1 represents on right bank of the river.
 
-### Logical Reasoning and Planning
+## Initial State
+The initial state of the problem is represented by (0,0,0,0) where the farmer, the wolf, the goat, and the cabbage all being on the left bank of the river.
 
-The first step in solving this problem is to use logical reasoning and planning to determine the steps that the farmer needs to take to get all three items across the river safely. This may involve creating a list of actions and determining the order in which they should be taken.
+## Goal State
+The goal state of the problem is represented by (1,1,1,1) where the farmer, the wolf, the goat, and the cabbage all being on the right bank of the river.
 
-### Constraint Satisfaction
+## Actions
+The actions of the problem are represented by the items that the farmer is taking across the river. The farmer can take any one of the following items across the river: the wolf, the goat, or the cabbage.
 
-The next step is to use constraint satisfaction to ensure that all the constraints are satisfied. This means that the farmer must take steps to ensure that the wolf is never left alone with the chicken and that the chicken is never left alone with the corn.
+## Algorithm for State Space Search
 
-### Iterative Problem-Solving
-
-Finally, the farmer can use iterative problem-solving to work through the problem one step at a time. This might involve starting with one item (such as the chicken) and moving on to the next once the first has been safely crossed.
-
-## Text Algorithm
-
-1. Initialize a variable 'side' to represent the starting side of the river
-2. Initialize a variable 'safe' to represent the safe side of the river
-3. Move the wolf across the river, if the farmer is on the safe side move the wolf, otherwise, move the farmer and chicken or corn first
-4. Move the chicken across the river, if the farmer is on the safe side move the chicken, otherwise, move the farmer and wolf or corn first
-5. Move the corn across the river, if the farmer is on the safe side move the corn, otherwise, move the farmer and chicken or wolf first
-6. Repeat step 3,4, and 5 until the farmer, wolf, chicken, and corn are all safely on the other side of the river.
+1. Initialize a queue with the initial state of the problem, represented by (0,0,0,0)
+2. While the queue is not empty, do the following:
+    - Dequeue the first state in the queue
+    - Check if the current state is the goal state, represented by (1,1,1,1)
+    - If it is, return the solution path.
+    - Else, generate all possible new states by applying the actions (moving the farmer and one other item across the river) and make sure to check the constraints of the problem.
+3. Add all new states to the queue and mark them as visited.
+4. If the queue is empty and the goal state has not been reached, return "No solution found"
