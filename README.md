@@ -8,3 +8,5 @@ Some problem solving solutions. Trying to commit and push daily.
 5. River crossing problem
 6. Word frequency counter
 7. Coin chnage problem
+8. Palindrome detector
+9. Fibonacci sequence
