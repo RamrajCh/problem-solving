@@ -3,7 +3,7 @@ def main(N):
     b = 1
     print(a)
     print(b)
-    for i in range(1,N-1):
+    for i in range(2,N):
         c = a + b
         print(c)
         a = b
