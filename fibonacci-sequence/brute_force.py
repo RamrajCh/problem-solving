@@ -1,14 +1,12 @@
-def main(N):
+def fibonacci(N):
     a = 0
     b = 1
-    print(a)
-    print(b)
-    for i in range(2,N):
+    for i in range(2,N+1):
         c = a + b
-        print(c)
         a = b
         b = c
+    return(c)
 
 if __name__ == "__main__":
     N = 10
-    main(N)
+    print(fibonacci(N))
