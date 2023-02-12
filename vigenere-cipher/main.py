@@ -35,5 +35,5 @@ def vigenere_cipher(plaintext, keyword):
 
 if __name__ == "__main__":
     plaintext = "THISISATOPSECRETMESSAGE"
-    keyword = "KAVREPALANCHOK"
+    keyword = "HELLO"
     vigenere_cipher(plaintext, keyword)
