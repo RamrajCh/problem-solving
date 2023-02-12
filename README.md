@@ -10,3 +10,4 @@ Some problem solving solutions. Trying to commit and push daily.
 7. Coin chnage problem
 8. Palindrome detector
 9. Fibonacci sequence
+10. Vigenère Cipher

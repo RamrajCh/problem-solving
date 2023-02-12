@@ -2,6 +2,16 @@
 ## Problem Statement
 Implement a Vigenère cipher algorithm in Python that can be used to encrypt and decrypt messages.
 
+## Example
+
+`plaintext = THISISATOPSECRETMESSAGE`
+
+`keyword = HELLOHELLOHELLOHELLOHEL`
+
+`encrypted = ALTDWZEEZDZINCSAQPDGHKP`
+
+`decrypted = THISISATOPSECRETMESSAGE`
+
 ## About the Vigenère Cipher
 The Vigenère cipher is a method of encrypting messages by using a series of interwoven Caesar ciphers, based on the letters of a keyword. Each letter in the message is shifted by a number of places based on its corresponding letter in the keyword.
 
